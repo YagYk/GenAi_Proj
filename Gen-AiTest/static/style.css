@@ -1,0 +1,120 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a2e;
+    color: #e94560;
+}
+
+#cursor-dot {
+    width: 5px;
+    height: 5px;
+    background-color: #e94560;
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+header {
+    background-color: #16213e;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+    color: #e94560;
+}
+
+nav a {
+    color: #e94560;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+.webcam-container, .image-container, .chatbot-container {
+    width: 30%;
+    background-color: #0f3460;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 0 20px rgba(233, 69, 96, 0.2);
+}
+
+video, img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0;
+    background-color: #e94560;
+    color: #1a1a2e;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff6b6b;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.chatbot-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#chat-messages {
+    height: 300px;
+    overflow-y: auto;
+    border: 1px solid #e94560;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #16213e;
+}
+
+#user-input {
+    width: calc(100% - 70px);
+    padding: 0.5rem;
+    border: 1px solid #e94560;
+    border-radius: 5px;
+    background-color: #16213e;
+}
+
+#send-message {
+    width: 60px;
+}
+
+.login-container {
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
